@@ -2,3 +2,6 @@ benchmark
 Dockerfile
 sources.list
 yarn.lock
+native/target
+native/artifacts.json
+native/index.node
