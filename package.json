@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Node binding for https://github.com/getsentry/rust-sourcemap",
   "main": "index.js",
+  "typings": "index.d.ts",
   "scripts": {
     "benchmark": "node benchmark",
     "build": "neon build",
