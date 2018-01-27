@@ -1,6 +1,6 @@
 {
   "name": "sourcemap-decoder",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Node binding for https://github.com/getsentry/rust-sourcemap",
   "main": "index.js",
   "scripts": {
