@@ -2,7 +2,7 @@
 [rust-sourcemap](https://github.com/getsentry/rust-sourcemap) nodejs bindings
 
 # Install
-Make sure have rust installed in your environment.
+Make sure you have rust installed in your environment.
 follow this link: https://www.rust-lang.org/en-US/install.html to install rust toolchains.
 
 > 如果你是中国用户，可以使用 `curl https://sh.rustup.rs -sSf | sed "s/https:\/\/static.rust-lang.org\/rustup\/dist/https:\/\/mirrors.ustc.edu.cn\/rust-static\/rustup\/dist/g" | sh` 来安装
