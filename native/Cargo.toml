@@ -1,0 +1,17 @@
+[package]
+name = "sourcemap-binding"
+version = "0.1.0"
+authors = ["LongYinan <lynweklm@gmail.com>"]
+build = "build.rs"
+
+[lib]
+name = "sourcemap_binding"
+crate-type = ["dylib"]
+
+[build-dependencies]
+neon-build = "0.1.22"
+
+[dependencies]
+neon = "0.1.22"
+neon-runtime = "0.1.22"
+sourcemap = "*"
