@@ -24,12 +24,12 @@ EOF
 # Working in Docker
 There is a Official rust Dockerfile in [Github](https://github.com/rust-lang-nursery/docker-rust/blob/master/1.23.0/stretch/Dockerfile). You can follow this file to setup your Dockerfile.
 
-> 如果你是中国用户，[Dockerfile](./Dockerfile) 是一份 Dockerfile 的样板文件，它可以在国内达到更快的 Build 速度
+> 如果你是中国用户，[Dockerfile](./Dockerfile) 是一份 Dockerfile 的样板文件，它可以在国内达到更快的 Build 速度
 
 
 > If you want to use neon bindings with your NodeJS project in Docker, I suggest you `don't` install rust toolchains in your production use Docker Image, just install them in your `ci environment`, and run `yarn install --production` or `npm install --production`, then use Docker `ADD` command to copy all your files into your `production` Docker Image. And if you do that, don't forget to keep your NodeJS version in `ci environment` to be the same with the NodeJS version in `production` environment.
 
-> 如果你需要在生产环境里面使用 `neon bindings` 相关的项目，建议 ***不要*** 在 `production` 使用的 Docker Image 内安装 Rust 相关的工具链，这样会极大增加 Docker Image 的体积，你可以在你的 ci 环境内安装 Rust 相关的工具，在执行 `yarn install --production` 或者 `npm install --production` 后将所有文件 `ADD` 到生产环境的 Docker Image 中。如果你这样做，确保 ci 运行时的 NodeJS 版本与 `production` 环境的 NodeJS 版本一致。
+> 如果你需要在生产环境里面使用 `neon bindings` 相关的项目，建议 ***不要*** 在 `production` 使用的 Docker Image 内安装 Rust 相关的工具链，这样会极大增加 Docker Image 的体积，你可以在你的 ci 环境内安装 Rust 相关的工具，在执行 `yarn install --production` 或者 `npm install --production` 后将所有文件 `ADD` 到生产环境的 Docker Image 中。如果你这样做，确保 ci 运行时的 NodeJS 版本与 `production` 环境的 NodeJS 版本一致。
 
 # Benchmark
 run: `yarn benchmark` or `npm run benchmark` to see the benchmark result.
