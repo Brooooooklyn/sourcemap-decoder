@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install \
     apt-transport-https \
     ca-certificates \
     curl \
+    wget \
     software-properties-common -y && \
     apt-get autoremove -y && apt-get purge && apt-get autoclean
 
